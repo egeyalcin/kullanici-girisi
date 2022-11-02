@@ -20,7 +20,12 @@ public class KullaniciGiris {
             if (decision.equals("y")) {
                 System.out.println("Password giriniz");
                 password = inp.nextLine();
-                System.out.println("Sifreniz basariyla degisti");
+                if (password.equals("patika")) {
+                    System.out.println("Şifre oluşturulamadı, lütfen başka şifre giriniz");
+                }
+                else {
+                    System.out.println("Şifre oluşturuldu");
+                }
             }
             else {
                 System.out.println("Sifreniz degistirilmedi");
